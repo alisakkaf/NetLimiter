@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/base_keyline_4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_keyline_4" android:layout_marginBottom="@dimen/base_keyline_4" android:src="@drawable/throttly_intro" />
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody2" android:id="@id/intro_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/base_keyline_2" android:text="@string/throttly_intro_message" android:lineSpacingMultiplier="1.2" android:paddingStart="@dimen/base_keyline_2" android:paddingEnd="@dimen/base_keyline_2" />
+</LinearLayout>
