@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="scroll|enterAlways|snap" app:navigationIcon="?homeAsUpIndicator" style="@style/ToolBarTheme" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:paddingBottom="32.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <com.google.android.material.textview.MaterialTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_detail_name" style="@style/Widget.Fiber.ProfileHintTextView" />
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:helperTextEnabled="false" style="@style/Widget.Fiber.ProfileEditLayout">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/profile_name_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="profile name" android:inputType="text" style="@style/Widget.Fiber.ProfileEditView" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/base_keyline_2" />
+            <com.google.android.material.textview.MaterialTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_detail_download_bandwidth" style="@style/Widget.Fiber.ProfileHintTextView" />
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:helperText="Download bandwidth in kbps, 0 means no limitation" style="@style/Widget.Fiber.ProfileEditLayout">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/profile_in_bandwidth_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="0" style="@style/Widget.Fiber.ProfileEditView" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/base_keyline_2" />
+            <com.google.android.material.textview.MaterialTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_detail_upload_bandwidth" style="@style/Widget.Fiber.ProfileHintTextView" />
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:helperText="Upload bandwidth in kbps, 0 means no limitation" style="@style/Widget.Fiber.ProfileEditLayout">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/profile_out_bandwidth_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="0" style="@style/Widget.Fiber.ProfileEditView" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/base_keyline_2" />
+            <com.google.android.material.textview.MaterialTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_detail_latency" style="@style/Widget.Fiber.ProfileHintTextView" />
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:helperText="Minimum latency, in milliseconds" style="@style/Widget.Fiber.ProfileEditLayout">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/profile_latency_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="0" style="@style/Widget.Fiber.ProfileEditView" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/base_keyline_2" />
+            <com.google.android.material.textview.MaterialTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_detail_dns_delay" style="@style/Widget.Fiber.ProfileHintTextView" />
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:helperText="Delay dns query, in in milliseconds" style="@style/Widget.Fiber.ProfileEditLayout">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/profile_dns_delay_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="0" style="@style/Widget.Fiber.ProfileEditView" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
