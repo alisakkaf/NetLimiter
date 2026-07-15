@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceHeadline6" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/outline_arrow_drop_down_24" android:drawablePadding="@dimen/base_keyline_2" />
+    <View android:layout_width="4.0dip" android:layout_height="4.0dip" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/indicator" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/outline_arrow_drop_down_24" />
+</merge>
