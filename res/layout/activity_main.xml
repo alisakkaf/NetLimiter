@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_dashboard" />
+    <com.google.android.material.bottomappbar.BottomAppBar android:layout_gravity="bottom" android:id="@id/bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.alisakkaf.networklimiter.widget.StartingButton android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundTint="@color/color_control_activated" app:layout_anchor="@id/bar" app:srcCompat="@drawable/round_start_arrow_24px" app:tint="@color/color_on_primary" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
