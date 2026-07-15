@@ -1,0 +1,19 @@
+version: 2.12.1
+apkFileName: Throttly+-+Network+Tools_1.2.3_APKPure.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 24
+  targetSdkVersion: 31
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: com.alisakkaf.networklimiter
+versionInfo:
+  versionCode: 1
+  versionName: '1.0'
+doNotCompress:
+- arsc
+- png
+- so
+- assets/dexopt/baseline.prof

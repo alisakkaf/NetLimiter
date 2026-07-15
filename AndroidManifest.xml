@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1" android:versionName="1.0" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.alisakkaf.networklimiter" platformBuildVersionCode="31" platformBuildVersionName="12"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="31" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <application android:theme="@style/Theme.Fiber" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.alisakkaf.networklimiter.FiberApplication" android:allowBackup="false" android:supportsRtl="true" android:extractNativeLibs="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:localeConfig="@xml/locales_config">
+        <activity android:name="com.alisakkaf.networklimiter.LandingActivity" />
+        <activity android:theme="@style/Theme.Fiber.NoActionBar" android:label="@string/app_name" android:name="com.alisakkaf.networklimiter.ui.DashboardActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alisakkaf.networklimiter.ui.dns.DnsListActivity" />
+        <activity android:name="com.alisakkaf.networklimiter.ui.settings.SettingsActivity" />
+        <activity android:name="com.alisakkaf.networklimiter.ui.throttle.ProfileActivity" />
+        <activity android:name="com.alisakkaf.networklimiter.ui.throttle.ThrottleActivity2" />
+        <activity android:theme="@style/Theme.Fiber.Dashboard" android:name="com.alisakkaf.networklimiter.ui.throttle.ThrottleActivity" />
+        <activity android:theme="@style/Theme.Fiber.Translucent" android:name="com.alisakkaf.networklimiter.service.VpnRequestActivity" android:taskAffinity="" android:excludeFromRecents="true" android:launchMode="singleTask" />
+        <service android:name="com.alisakkaf.networklimiter.service.FiberVpnService2" android:permission="android.permission.BIND_VPN_SERVICE" android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.alisakkaf.networklimiter.receiver.StopVpnReceiver" />
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.ali_sakkaf.networklimiter.firebaseinitprovider" android:initOrder="100" android:directBootAware="true" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.alisakkaf.networklimiter.androidx-startup">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup" />
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup" />
+        </provider>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true" />
+    </application>
+</manifest>
