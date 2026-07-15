@@ -1,0 +1,59 @@
+.class public final synthetic Ls31;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lz71;
+
+
+# static fields
+.field public static final a:Lz71;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Ls31;
+
+    invoke-direct {v0}, Ls31;-><init>()V
+
+    sput-object v0, Ls31;->a:Lz71;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/Object;
+    .locals 2
+
+    sget-object v0, Lk81;->b:Lb81;
+
+    .line 1
+    sget-object v0, Lmk1;->e:Lmk1;
+
+    .line 2
+    invoke-virtual {v0}, Lmk1;->b()Lnk1;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lnk1;->d()J
+
+    move-result-wide v0
+
+    .line 3
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v0
+
+    return-object v0
+.end method
