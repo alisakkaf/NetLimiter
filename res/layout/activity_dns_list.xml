@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollFlags="scroll|enterAlways|snap" app:navigationIcon="?homeAsUpIndicator" style="@style/ToolBarTheme" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/recyclerView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="right|bottom" android:id="@id/clear_all_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" app:backgroundTint="@color/color_control_activated" app:srcCompat="@drawable/ic_clear_all" app:tint="@color/color_on_primary" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
