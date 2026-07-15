@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="0.0dip" />
+    <TextView android:gravity="left|center" android:paddingBottom="@dimen/base_keyline_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/choose_application_tips" android:drawableLeft="@drawable/round_info_24" android:drawablePadding="4.0dip" android:paddingStart="@dimen/keyline_4" android:paddingEnd="@dimen/base_keyline_4" />
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="800.0dip">
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/recycler_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.core.widget.ContentLoadingProgressBar android:layout_gravity="center|top" android:id="@id/progress_bar" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="100.0dip" style="@style/Widget.AppCompat.ProgressBar" />
+    </FrameLayout>
+</LinearLayout>
