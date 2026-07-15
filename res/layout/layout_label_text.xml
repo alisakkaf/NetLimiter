@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alisakkaf.networklimiter.widget.LabelTextView android:paddingTop="@dimen/keyline_1" android:paddingBottom="@dimen/keyline_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceSubtitle1" android:id="@id/label_title_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/chart_label_round" android:drawablePadding="@dimen/keyline_4" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:id="@id/label_value_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/keyline_4" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.alisakkaf.networklimiter.widget.LabelTextView>
