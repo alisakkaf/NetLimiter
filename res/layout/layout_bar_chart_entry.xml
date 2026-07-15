@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/keyline_1" android:paddingBottom="@dimen/keyline_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceCaption" android:id="@id/title_view" android:paddingBottom="@dimen/keyline_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ProgressBar android:id="@id/progress_bar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:progress="100" android:layout_marginEnd="32.0dip" app:layout_constraintEnd_toStartOf="@id/value_view" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title_view" style="@style/Widget.Fiber.CharProgressBar" />
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBody2" android:id="@id/value_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/progress_bar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/progress_bar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
