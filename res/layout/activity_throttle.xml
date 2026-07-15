@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="64.0dip">
+        <com.google.android.material.card.MaterialCardView android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="0.0dip" app:cardElevation="0.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="32.0dip">
+                <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline4" android:textColor="?colorPrimary" android:id="@id/fiber_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/app_name" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <com.google.android.material.textview.MaterialTextView android:layout_gravity="left|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_sub_title" style="@style/Widget.Fiber.SubTitleView" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.google.android.material.bottomappbar.BottomAppBar android:layout_gravity="bottom" android:id="@id/bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.alisakkaf.networklimiter.widget.StartingButton android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundTint="@color/color_control_activated" app:layout_anchor="@id/bar" app:srcCompat="@drawable/round_start_arrow_24px" app:tint="@color/color_on_primary" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
