@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/progress_bar_corner_radius" />
+            <size android:height="@dimen/progress_bar_height_material" />
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/secondaryProgress">
+        <scale android:scaleWidth="100%">
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/progress_bar_corner_radius" />
+                <size android:height="@dimen/progress_bar_height_material" />
+                <solid android:color="@android:color/white" />
+            </shape>
+        </scale>
+    </item>
+    <item android:gravity="fill_horizontal|center" android:id="@android:id/progress">
+        <scale android:scaleWidth="100%">
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/progress_bar_corner_radius" />
+                <size android:height="@dimen/progress_bar_height_material" />
+                <solid android:color="@color/domain_times_progress_color" />
+            </shape>
+        </scale>
+    </item>
+</layer-list>
