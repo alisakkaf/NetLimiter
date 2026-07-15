@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:elevation="0.0dip" app:navigationIcon="?homeAsUpIndicator" />
+    <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="180.0dip" app:cardBackgroundColor="@color/color_surface" app:strokeWidth="0.0dip" style="@style/Widget.Fiber.SummaryCardView">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:textColor="@color/color_on_surface" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1234" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:textColor="@color/color_on_surface" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1234" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline5" android:textColor="@color/color_on_surface" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1234" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_margin="16.0dip" style="@style/Widget.Fiber.DashItemCardView">
+                <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_http_cap" style="@style/Widget.Fiber.DashItemText" />
+                <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/desc_mitm_sniff" style="@style/Widget.Fiber.DashItemDesc" />
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_margin="16.0dip" app:strokeWidth="0.0dip" style="@style/Widget.Fiber.DashItemCardView">
+                <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_dns_cap" style="@style/Widget.Fiber.DashItemText" />
+                <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/desc_dns_recent" style="@style/Widget.Fiber.DashItemDesc" />
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_margin="16.0dip" app:strokeWidth="0.0dip" style="@style/Widget.Fiber.DashItemCardView">
+                <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_throttling_cap" style="@style/Widget.Fiber.DashItemText" />
+                <com.google.android.material.textview.MaterialTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/desc_throttling_bad" style="@style/Widget.Fiber.DashItemDesc" />
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
