@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_category_about">
+        <Preference
+            android:icon="@drawable/ic_github"
+            android:title="@string/pref_github_title"
+            android:summary="https://github.com/alisakkaf">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/alisakkaf" />
+        </Preference>
+        <Preference
+            android:icon="@drawable/ic_facebook"
+            android:title="@string/pref_facebook_title"
+            android:summary="https://www.facebook.com/AliSakkaf.Dev/">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.facebook.com/AliSakkaf.Dev/" />
+        </Preference>
+        <Preference
+            android:icon="@drawable/ic_website"
+            android:title="@string/pref_website_title"
+            android:summary="https://alisakkaf.com/">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://alisakkaf.com/" />
+        </Preference>
+        <Preference
+            android:icon="@drawable/ic_developer"
+            android:title="@string/pref_dev_info_title"
+            android:selectable="false" />
+        <Preference
+            android:key="version"
+            android:icon="@drawable/ic_developer"
+            android:title="@string/pref_version"
+            android:selectable="false" />
+        <Preference
+            android:icon="@drawable/ic_thanks"
+            android:title="@string/pref_thanks_title"
+            android:summary="@string/pref_thanks_summary"
+            android:selectable="false" />
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>
