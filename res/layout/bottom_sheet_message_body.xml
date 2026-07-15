@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceHeadline6" android:layout_gravity="center_horizontal" android:padding="@dimen/keyline_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/http_message_body_title" />
+    <com.google.android.material.button.MaterialButtonToggleGroup android:id="@id/display_format_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/keyline_4" app:singleSelection="true">
+        <Button android:id="@id/show_plain_text_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_body_view_text" style="?materialButtonOutlinedStyle" />
+        <Button android:id="@id/show_json_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_body_view_json" style="?materialButtonOutlinedStyle" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.alisakkaf.networklimiter.widget.PrecomputedTextView android:id="@id/text_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="400.0dip" android:textIsSelectable="true" android:paddingStart="@dimen/keyline_4" android:paddingEnd="@dimen/keyline_4" />
+    </ScrollView>
+</LinearLayout>
