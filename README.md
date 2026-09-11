@@ -100,6 +100,11 @@ This ensures NetLimiter runs smoothly on all physical smartphones, tablets, Andr
 
 ---
 
+<!-- DONATE_SECTION:START -->
+<!-- DONATE_SECTION:END -->
+
+---
+
 ## ⭐ Star the Repo!
 
 If you find this project useful, please **give it a Star (⭐)** on GitHub! Your support helps make the project visible to more developers and users.
